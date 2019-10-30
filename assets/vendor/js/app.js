@@ -1,8 +1,11 @@
 var isMenuToggled = true;
 
 $(document).ready(function () {
+    ancorActive();
     if (isMenuToggled)
         openNav();
+    else 
+        closeNav();
 })
 
 function openNav() {
@@ -13,14 +16,20 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("sideNav").style.width = "50px";
-    document.getElementById("main").style.marginLeft = "50px";
+    document.getElementById("sideNav").style.width = "0px";
+    document.getElementById("main").style.marginLeft = "0px";
     isMenuToggled = false;
 }
 
+function ancorActive(){
+    var expandeAncdor = document.querySelectorAll("a[aria-expanded='true']");
+
+    expandeAncdor.forEach(a => {
+        a.setAttribute("class", "active");
+    });
+}
 
 $("#menu").on("click", function () {
-    console.log("aaa");
     if (isMenuToggled){
         closeNav();
     }
