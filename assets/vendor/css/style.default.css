@@ -413,7 +413,21 @@ section header {
   color: #33b35a;
 }
 
+/* badge */
+.badge-default{
+  color: #fff;
+  background-color: #33b35a;
+}
+.badge-pill{
+  padding: .25em .5em;
+  border-radius: 50%;
+}
 
+.badge-offset{
+  position: absolute !important;
+  margin-left: -10px;
+  
+}
 
 /* button */
 .btn-circle {
@@ -479,6 +493,12 @@ section header {
   opacity: 0.2;
   transition: 0s;
   transform: scale(0, 0);
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+  border: 1px solid #f4f7fa;
 }
 
 /* input */
