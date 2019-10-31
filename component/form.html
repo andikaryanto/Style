@@ -18,17 +18,67 @@
 
   <body>
     <nav id="sideNav" class="sidenav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+      <li class = "li">
+        <a class = "nav-link" href="#about" aria-expanded="false" data-toggle = "collapse"><i class = "fa fa-wpforms"></i>About</a>
+        <ul id="about" class="collapse">
+          <li>
+            <a class = "nav-link" href="#">aaaa</a>
+          </li>
+        </ul>
+      </li>
+      <li class = "li">
+          <a href="#service" aria-expanded="false" data-toggle = "collapse"><i class = "fa fa-wpforms"></i>Serivce</a>
+        <ul id="service" class="collapse">
+          <li>
+            <a  href="#">saasdasd</a>
+          </li>
+        </ul>
+      </li>
+      <li class = "li">
+          <a href="#">Clients</a>
+      </li>
+      <li class = "li">
+          <a href="#">Contact</a>
+      </li>
     </nav>
     <div id="main" class = "page">
-      <nav class="navbar">
+      <nav class="navbar navbar-expand-md navbar-expand-sm navbar-expand-lg navbar-light bg-light">
         <div class = "container-fluid">
-        <a id = "menu" class = "menu-btn shadow">
-          <i class = "fa fa-bars"></i>
-        </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a id = "menu" class = "btn btn-circle shadow">
+                      <i class = "fa fa-bars"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link title" href="#">Home</a>
+                  </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <!-- <div class="dropdown">
+                      <a id="dropdownMenuButton" href="#" class=" dropdown btn btn-icon-only btn-circle btn-ripple dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class = "fa fa-user"></i></a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">AcASDASDSAtion</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div> -->
+                  <div class="nav-item dropdown">
+                      <a id="dropdownMenuButton" href="#" class="btn btn-icon-only btn-circle btn-ripple" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class = "fa fa-user"></i>
+                      </a>
+                    <div class="ripple-container"></div></a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
       </nav>  
       <div class="breadcrumb-holder">
@@ -45,7 +95,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="card shadow">
-              <div class="card-header ">
+              <div class="card-header">
                 <div class="row">
                   <div class="col-6">
                     <div class = "card-icon-primary shadow">
@@ -56,22 +106,32 @@
                       </div>
                   </div>
                   <div class="col-6">
-                        <a href="#" class="btn btn-primary circle-button shadow p-3"><i class = "fa fa-plus"></i></a>
+                        <a href="#" class="btn btn-default btn-circle shadow p-3"><i class = "fa fa-plus"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
               <form>
-                    <div class="form-group">
-                      <label required>User Name</label>
-                      <input type="text" placeholder="User Name" class="form-control">        
-                    </div>
-                    <div class="form-group">
-                        <label required>Password</label>
-                        <input type="password" placeholder="Password" class="form-control"> 
+              <div class="card-body">
+                  <div class="form-group">
+                    <label required>User Name</label>
+                    <input type="text" placeholder="User Name" class="form-control">        
                   </div>
+                  <div class="form-group">
+                      <label required>Password</label>
+                      <input type="password" placeholder="Password" class="form-control"> 
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                </div>
+                
+              <div class="card-footer">
+                  <div class="form-group">
+                      <button class = "btn btn-default">Submit</button>
+                  </div>
+                </div>  
               </form>
-              </div>
             </div>
           </div>
           
@@ -85,18 +145,23 @@
                     User Group
                   </div>
               </div>
-              <div class="card-body">
               <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control floating" placeholder="Email" required="" autofocus="">
-                  <label for="inputEmail">Email</label>
-                </div>
-                <div class="form-label-group">
-                    <input type="password"  class="form-control floating" placeholder="Password" required="" autofocus="">
-                    <label >Password</label>
+                <div class="card-body">
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control floating" placeholder="Email" required="" autofocus="">
+                    <label for="inputEmail">Email</label>
                   </div>
+                  <div class="form-label-group">
+                      <input type="password"  class="form-control floating" placeholder="Password" required="" autofocus="">
+                      <label >Password</label>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button class = "btn btn-default">Submit</button>
+                    </div>
+                  </div>  
               </form>
-            </div>
           </div>
         </div>
       </div>
@@ -106,3 +171,4 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../assets/vendor/js/app.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>

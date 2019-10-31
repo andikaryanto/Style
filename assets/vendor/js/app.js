@@ -4,7 +4,7 @@ $(document).ready(function () {
     ancorActive();
     if (isMenuToggled)
         openNav();
-    else 
+    else
         closeNav();
 })
 
@@ -21,7 +21,7 @@ function closeNav() {
     isMenuToggled = false;
 }
 
-function ancorActive(){
+function ancorActive() {
     var expandeAncdor = document.querySelectorAll("a[aria-expanded='true']");
 
     expandeAncdor.forEach(a => {
@@ -30,11 +30,10 @@ function ancorActive(){
 }
 
 $("#menu").on("click", function () {
-    if (isMenuToggled){
+    if (isMenuToggled) {
         closeNav();
     }
     else {
         openNav();
     }
 });
-
