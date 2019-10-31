@@ -293,6 +293,9 @@ section header {
   line-height: 1.5;
   border-radius: 0;
 }
+.dropdown{
+  margin-left: 1.5rem;
+}
 
 .dropdown-menu{
   padding: .5rem .5rem;
@@ -552,14 +555,16 @@ h6,
   }
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 320px) {
   .navbar-expand-md .navbar-collapse {
     padding-left: 0.9rem;
     padding-right: 0.9rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .container-fluid {
     padding: 0 0.9rem;
   }
