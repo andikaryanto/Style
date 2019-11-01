@@ -24,6 +24,9 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
+.sidenav .nav-link{
+ /* line-height:74px; */
+}
 
 .collapsing {
   -moz-transition: height 0.5s;
@@ -71,16 +74,11 @@ a:hover {
 
 .sidenav .li {
   margin-top: -20px;
-  /* text-align: center; */
-  /* position: relative; */
-  /* height: 72px; */
 }
 
 .sidenav .li a i {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 15px;
-  top: 50%;
-  /* position: absolute; */
 }
 
 .sidenav li ul {
@@ -173,11 +171,26 @@ nav.navbar.container-fluid {
   margin-top: 30px;
 }
 
-.card-icon-primary {
+.card-icon-primary{
+  background-color:#33b35a;
+}
+.card-icon-title {
+  position: relative;
+  margin-top: -30px;
+  height: 70px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 70px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.card-icon {
   text-align: center;
   position: relative;
   margin-top: -30px;
-  background-color: #33b35a;
   max-width: 70px;
   height: 70px;
   border-radius: 5px;
@@ -443,6 +456,10 @@ input[class*='floating']:-webkit-autofill:active  {
 }
 
 /* button */
+.btn{
+  
+  font-weight: 300;
+}
 .btn-circle {
   border-radius: 50%;
 }
@@ -523,6 +540,10 @@ input::placeholder {
 label[required]::after {
   content: " *";
   color: red;
+}
+
+label{
+  /* font-weight: 300; */
 }
 
 /* text */

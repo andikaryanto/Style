@@ -53,7 +53,7 @@ function overideDtTableShow() {
         if (element.id) {
             var allShow = document.querySelectorAll("select[name=" + element.id + "_length]");
             allShow.forEach(s => {
-                s.setAttribute('style','width:50px;');
+                s.setAttribute('style','width:90px;');
                 s.classList.add("floating");
             })
         }
