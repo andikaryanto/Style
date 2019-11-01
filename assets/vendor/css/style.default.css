@@ -154,8 +154,9 @@ nav.navbar a:hover.menu-btn {
   background: rgb(248, 248, 248);
 }
 
-nav.navbar .container-fluid {
+nav.navbar.container-fluid {
   width: 100%;
+  margin-bottom: 0;
 }
 
 /* main */
@@ -207,7 +208,7 @@ nav.navbar .container-fluid {
   background-color: #fff;
   border-bottom: 0px solid #eee;
 }
-.card-footer{
+.card-footer {
   background-color: #fff;
   border-top: 0px solid #eee;
 }
@@ -275,6 +276,8 @@ section header {
 /* container */
 .container-fluid {
   /* padding: 0 3rem; */
+  margin-bottom: 3rem;
+  background-color: #f4f7fa;
 }
 
 /* form */
@@ -286,35 +289,42 @@ section header {
   border-radius: 0;
 }
 
+
+input[class*='floating']:-webkit-autofill,
+input[class*='floating']:-webkit-autofill:hover, 
+input[class*='floating']:-webkit-autofill:focus, 
+input[class*='floating']:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 .form-control {
   height: calc(2.4rem + 2px);
   padding: 0.45rem 0.75rem;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 0;
 }
-.dropdown{
+.dropdown {
   margin-left: 1.5rem;
 }
 
-.dropdown-menu{
-  padding: .5rem .5rem;
+.dropdown-menu {
+  padding: 0.5rem 0.5rem;
 }
 
-
 .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: .625rem 1.25rem;
-    clear: both;
-    font-weight: 400;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    border-radius: 3px;
-    font-size: 0.9rem;
-} 
+  display: block;
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  clear: both;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
 
 /* .dropdown-menu .active {
   background-color: #33b35a !important;
@@ -323,6 +333,7 @@ section header {
 .dropdown-item:hover {
   background-color: #33b35a;
   color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .floating:focus {
@@ -412,21 +423,23 @@ section header {
   font-size: 12px;
   color: #33b35a;
 }
+.form-label-group input:not(:placeholder-shown):invalid ~ label {
+  color: #ec0000;
+}
 
 /* badge */
-.badge-default{
+.badge-default {
   color: #fff;
   background-color: #33b35a;
 }
-.badge-pill{
-  padding: .25em .5em;
+.badge-pill {
+  padding: 0.25em 0.5em;
   border-radius: 50%;
 }
 
-.badge-offset{
+.badge-offset {
   position: absolute !important;
   margin-left: -10px;
-  
 }
 
 /* button */
@@ -564,6 +577,98 @@ h6,
   color: inherit;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/* table */
+.table {
+  font-weight: 300;
+}
+
+.table thead th {
+  border-top: none;
+  border-bottom: 0px solid #dee2e6 !important;
+}
+
+.table thead tr th {
+  color: #33b35a;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.table tbody tr th {
+  font-weight: 300;
+}
+
+/* datatables */
+.dataTables_filter .form-label-group {
+  float: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0em;
+}
+
+/* select option */
+.select-label{
+  margin-top: -20px;
+  font-size: 12px;
+}
+
+/* option */
+.select-option *{
+  background-color: #33b35a;
+}
+
+/* pagination */
+.page-link,
+.page-link:focus
+ {
+  border-radius: 30px;
+  border: 0px solid #dee2e6;
+  line-height: 1.25;
+  box-shadow: none;
+  margin : 0 3px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* .pagination .active a {
+} */
+.page-item.active .page-link {
+  background-color: #33b35a !important;
+  color: #fff !important;
+  margin : 0 3px;
+  font-size: 0.8rem;
+}
+.pagination .first .page-link,
+.pagination .last .page-link,
+.pagination .next .page-link,
+.pagination .previous .page-link {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+.page-item:not(:active) .page-link {
+  color: #999;
+  margin : 0 3px;
+  font-size: 0.8rem;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 30px;
+  border-color: transparent;
+  font-size: 0.8rem;
+}
 /* Fallback for Edge
 -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
@@ -574,8 +679,6 @@ h6,
     color: #777;
   }
 }
-
-
 
 @media (min-width: 320px) {
   .navbar-expand-md .navbar-collapse {
