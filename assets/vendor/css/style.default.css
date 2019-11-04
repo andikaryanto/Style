@@ -24,8 +24,8 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-.sidenav .nav-link{
- /* line-height:74px; */
+.sidenav .nav-link {
+  /* line-height:74px; */
 }
 
 .collapsing {
@@ -171,8 +171,8 @@ nav.navbar.container-fluid {
   margin-top: 30px;
 }
 
-.card-icon-primary{
-  background-color:#33b35a;
+.card-icon-primary {
+  background-color: #33b35a;
 }
 .card-icon-title {
   position: relative;
@@ -302,12 +302,11 @@ section header {
   border-radius: 0;
 }
 
-
-input[class*='floating']:-webkit-autofill,
-input[class*='floating']:-webkit-autofill:hover, 
-input[class*='floating']:-webkit-autofill:focus, 
-input[class*='floating']:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+input[class*="floating"]:-webkit-autofill,
+input[class*="floating"]:-webkit-autofill:hover,
+input[class*="floating"]:-webkit-autofill:focus,
+input[class*="floating"]:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .form-control {
@@ -456,8 +455,7 @@ input[class*='floating']:-webkit-autofill:active  {
 }
 
 /* button */
-.btn{
-  
+.btn {
   font-weight: 300;
 }
 .btn-circle {
@@ -542,7 +540,7 @@ label[required]::after {
   color: red;
 }
 
-label{
+label {
   /* font-weight: 300; */
 }
 
@@ -638,25 +636,24 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 /* select option */
-.select-label{
+.select-label {
   margin-top: -20px;
   font-size: 12px;
 }
 
 /* option */
-.select-option *{
+.select-option * {
   background-color: #33b35a;
 }
 
 /* pagination */
 .page-link,
-.page-link:focus
- {
+.page-link:focus {
   border-radius: 30px;
   border: 0px solid #dee2e6;
   line-height: 1.25;
   box-shadow: none;
-  margin : 0 3px;
+  margin: 0 3px;
   font-size: 0.8rem;
   color: #fff;
 }
@@ -666,7 +663,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 .page-item.active .page-link {
   background-color: #33b35a !important;
   color: #fff !important;
-  margin : 0 3px;
+  margin: 0 3px;
   font-size: 0.8rem;
 }
 .pagination .first .page-link,
@@ -677,10 +674,9 @@ div.dataTables_wrapper div.dataTables_filter input {
   padding-right: 3px;
 }
 
-
 .page-item:not(:active) .page-link {
   color: #999;
-  margin : 0 3px;
+  margin: 0 3px;
   font-size: 0.8rem;
 }
 
@@ -689,6 +685,23 @@ div.dataTables_wrapper div.dataTables_filter input {
   border-radius: 30px;
   border-color: transparent;
   font-size: 0.8rem;
+}
+
+/* custom controll */
+.custom-control {
+  line-height: 2rem;
+  padding-left: 2rem;
+}
+.custom-control-label::after ,
+.custom-control-label::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2rem;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  background-color: #33b35a;
+  border-radius: .25rem;
 }
 /* Fallback for Edge
 -------------------------------------------------- */
